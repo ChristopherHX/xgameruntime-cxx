@@ -7,8 +7,8 @@ jobs:
     steps:
       - uses: actions/checkout@v7
       - name: Configure
-        run: cmake -S . -B build -A x64
+        run: cmake -S . -B build -DENABLE_TESTS=ON -A x64
       - name: Build
-        run: cmake --build build
+        run: cmake --build build -A x64
       - name: Run tests
         run: ctest --test-dir build
