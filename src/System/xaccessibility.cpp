@@ -19,12 +19,11 @@
  * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
  */
 
-#include "../private.h"
 #define CINTERFACE
+#include "../private.h"
 #define debugstr_guid(x) "<debugstr_guid>"
 #define debugstr_a(x) "<debugstr_a>"
 #define IsEqualGUID(x, y) x == *y
-#include <xaccessibility.h>
 
 struct x_accessibility
 {
